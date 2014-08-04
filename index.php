@@ -21,28 +21,12 @@
 <body>
 
 
-<div id="wrapper">
-
-<?php include('includes/header.php'); ?>
-
-
-
-<div id="content">
-
 <p>
 
 under construction
 
 </p>
 
-
-
-</div> <!-- end #content -->
-
-<?php include('includes/sidebar.php'); ?>
-<?php include('includes/footer.php'); ?>
-
-</div> <!-- End #wrapper -->
 
   </body>
 
