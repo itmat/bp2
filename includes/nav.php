@@ -1,8 +1,9 @@
 <div id="nav">
 
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Portfolio</a>
-  <a href="#">Contact</a>
+  <a href="/">Home</a>
+  <!-- <a href="graph.php">Graphs</a> -->
+  <a href="datasets.php">Datasets</a>
+  <a href="software.php">Software</a>
+  <a href="contact.php">Contact</a>
 
 </div> <!-- end #nav -->

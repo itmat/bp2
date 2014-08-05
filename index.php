@@ -6,15 +6,15 @@
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-<meta name="description" content="" />
+<meta name="description" content="Benchmark Analysis of Algorithms for Determining and Quantifying Full-length mRNA Splice Forms from RNA-Seq Data" />
 
-<meta name="keywords" content="" />
+<meta name="keywords" content="RNA-Seq" />
 
-<meta name="author" content="" />
+<meta name="author" content="Katharina Hayer" />
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 
-<title>1stWebDesigner PHP Template</title>
+<title>BP2</title>
 
 </head>
 
@@ -29,43 +29,34 @@
 
 <div id="content">
 
-<h1>Heading1</h1>
-<h2>Heading2</h2>
-<h3>Heading3</h3>
-<h4>Heading4</h4>
-<h5>Heading5</h5>
-
-<h3>Paragraph Element</h3>
+<h2>Introduction</h2>
 
 <p>
-
-Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-
+  This project holds the links to the datasets, software and code
+  that was used for our second benchmarking project:
 </p>
 
-<p>
+<h3>Benchmark Analysis of Algorithms for Determining and Quantifying
+  Full-length mRNA Splice Forms from RNA-Seq Data</h3>
 
-Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
+<h4>Abstract: </h4>
 
-</p>
-
-<h3>Another Heading Starting Point</h3>
-
-<p>
-
-Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-
-</p>
-
-<p>
-
-Quisque pellentesque sodales aliquam. Morbi mollis neque eget arcu egestas non ultrices neque volutpat. Nam at nunc lectus, id vulputate purus. In et turpis ac mauris viverra iaculis. Cras sed elit a purus ultrices iaculis eget sit amet dolor. Praesent ac libero dolor, id viverra libero. Mauris aliquam nibh vitae eros sodales fermentum. Fusce cursus est varius ante vehicula eget ultrices felis eleifend. Nunc pharetra rutrum nibh et lobortis. Morbi vitae venenatis velit.
-
-</p>
+<p>The advantages of RNA sequencing (RNA-Seq) suggest it will replace microarrays
+  for highly parallel gene expression analysis. For example, in contrast to arrays,
+  RNA-Seq is expected to be able to provide accurate identification and quantification
+  of full-length transcripts. A number of methods have been developed for this purpose,
+  but short error prone reads makes it a difficult problem in practice.
+  It is essential to determine which algorithms perform best, and where and why they
+  fail. However, there is a dearth of independent and unbiased benchmarking studies of
+  these algorithms. Here we take an approach using both simulated and experimental
+  benchmark data to evaluate their accuracy. We conclude that most methods are inaccurate
+  even using idealized data, and that no method is sufficiently accurate once
+  complicating factors such as polymorphisms, intron signal, sequencing error, and
+  multiple splice forms are present. These results point to the pressing need for
+  further algorithm development. </p>
 
 </div> <!-- end #content -->
 
-<?php include('includes/sidebar.php'); ?>
 <?php include('includes/footer.php'); ?>
 
 </div> <!-- End #wrapper -->
