@@ -1,0 +1,137 @@
+body {
+background-color:#EFFBFB;
+font-family: helvetica;
+color:#333;
+margin:0;
+padding:0;
+}
+
+a{
+  color:darkblue;
+  text-decoration:none;
+
+}
+
+#wrapper {
+width:960px;
+background-color:#f8f8f8;
+margin:0 auto;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc;
+}
+
+#header {
+width:960px;
+height:70px;
+margin:0 auto;
+margin-bottom:25px;
+border-top:1px solid #ccc;
+}
+
+#header h2 {
+padding:10px;
+}
+
+#nav {
+width:910px;
+height:40px;
+padding-top: 20px;
+padding-left:50px;
+border-bottom:1px solid #ccc;
+background-color:#81DAF5;
+}
+
+#nav a {
+display:inline;
+padding:10px;
+text-decoration:none;
+background-color:#f1f1f1;
+}
+
+#nav a:hover {
+background-color:#bababa;
+height:80px;
+}
+
+#content {
+width:940px;
+float:left;
+padding:10px;
+}
+
+#sidebar {
+width:200px;
+float:right;
+margin-bottom:25px;
+}
+
+#sidebar a {
+text-decoration:none;
+}
+
+#sidebar li {
+list-style:none;
+}
+
+
+#footer {
+clear:both;
+width:960px;
+height:135px;
+border-top:1px solid #ccc;
+}
+
+#footer p {
+padding:10px;
+}
+
+
+table{
+  border-collapse:collapse;
+  width: 100%;
+}
+
+
+table, td, th {
+    border: 1px solid #5882FA;
+    padding: 5px;
+}
+
+th {
+    background-color: #5882FA;
+    color: white;
+}
+
+
+#contact-form {
+    width: 460px;
+    height: 240px;
+    background: #5882FA;
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+}
+
+#contact-form label {
+  float: left;
+  width: 200px;
+}
+
+#contact-form input, textarea {
+   float: left; width: 250px;
+}
+
+.clear { clear: both; height: 0; line-height: 0; }
+.floatright { float: right; }
+
+
+
+#contact-form input[type=submit] {
+    text-align: center;
+    float: right;
+    width: 150px;
+}
+
+
+
+
