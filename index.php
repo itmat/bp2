@@ -4,6 +4,8 @@
 
 <head>
 
+
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
 <meta name="description" content="Benchmark Analysis of Algorithms for Determining and Quantifying Full-length mRNA Splice Forms from RNA-Seq Data" />
@@ -13,6 +15,8 @@
 <meta name="author" content="Katharina Hayer" />
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <title>BP2</title>
 
@@ -54,6 +58,8 @@
   complicating factors such as polymorphisms, intron signal, sequencing error, and
   multiple splice forms are present. These results point to the pressing need for
   further algorithm development. </p>
+
+<h4>Preprint is available at <a href="http://biorxiv.org/content/early/2014/07/14/007088">bioRxiv</a>.</h4>
 
 </div> <!-- end #content -->
 

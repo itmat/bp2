@@ -13,6 +13,8 @@
 <meta name="author" content="Katharina Hayer" />
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <title>BP2</title>
 
@@ -39,12 +41,12 @@
 <tr>
   <td>Cufflinks</td>
   <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/20436464">Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation.</a></td>
-  <td>94</td>
+  <td>2.0.2</td>
 </tr>
 <tr>
-  <td>Eve</td>
-  <td>Jackson</td>
-  <td>94</td>
+  <td>IsoLasso</td>
+  <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/21951053">IsoLasso: a LASSO regression approach to RNA-Seq based transcriptome assembly.</a></td>
+  <td>2.6</td>
 </tr>
 </table>
 

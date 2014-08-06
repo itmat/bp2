@@ -13,6 +13,8 @@
 <meta name="author" content="Katharina Hayer" />
 
 <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 <title>BP2</title>
 
@@ -30,6 +32,40 @@
 <div id="content">
 
 <h2>Contact</h2>
+
+<p>
+<?php
+// display form if user has not clicked submit
+if (!isset($_POST["submit"])) {
+  ?>
+  <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>" id="contact-form">
+  <label for="from">From:</label>       <input type="text" name="from" id="from"><br>
+  <label for="email">E-mail:</label>    <input type="text" name="email" id="email"><br>
+  <label for="subject">Subject:</label> <input type="text" name="subject" id="subject"><br>
+  <label for="message">Message:</label> <textarea rows="10" cols="40" name="message" id="message"></textarea><br>
+  <br class="clear" />
+
+  <input type="submit" name="submit" value="Submit" id="submit">
+  </form>
+  <?php
+} else {    // the user has submitted the form
+  // Check if the "from" input field is filled out
+  if (isset($_POST["from"])) {
+    $from = $_POST["from"]; // sender
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+    // message lines should not exceed 70 characters (PHP rule), so wrap it
+    $message = wordwrap($message, 70);
+    // send mail
+    mail("hayer@upenn.edu","$subject $from",$message,"From: $email\n");
+    echo "Thank you, your message has been sent.";
+  }
+}
+?>
+
+
+
+</p>
 
 
 </div> <!-- end #content -->
