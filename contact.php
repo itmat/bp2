@@ -57,8 +57,15 @@ if (!isset($_POST["submit"])) {
     // message lines should not exceed 70 characters (PHP rule), so wrap it
     $message = wordwrap($message, 70);
     // send mail
-    mail("hayer@upenn.edu","$subject $from",$message,"From: $email\n");
-    echo "Thank you, your message has been sent.";
+    $out = mail("hayer@upenn.edu","$subject $from",$message,"From: $email\n");
+    if ($out) {
+      echo "Thank you, your message has been sent.";
+    } else {
+      echo "Message not sent! Please sent your message directly to <a href=\"mailto:hayer@upenn.edu?Subject=BP2\" target=\"_top\">hayer@upenn.edu</a>.\n<br>";
+
+      echo "Your message was:\n<br>";
+      echo "$message\n<br>";
+    }
   }
 }
 ?>
