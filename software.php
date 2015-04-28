@@ -119,7 +119,12 @@
   <td>bowtie2-2.2.3</td>
 </tr>
 <tr>
-  <td>samtools</td>
+  <td>GMAP</td>
+  <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/15728110">GMAP: a genomic mapping and alignment program for mRNA and EST sequences. (Wu 2005)</a></td>
+  <td>gmap-gsnap-2014-10-22</td>
+</tr>
+<tr>
+  <td>SAMtools</td>
   <td><a href="http://www.ncbi.nlm.nih.gov/pubmed/19505943">The Sequence Alignment/Map format and SAMtools. (Li 2009)</a></td>
   <td>samtools-0.1.19</td>
 </tr>
