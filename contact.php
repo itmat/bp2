@@ -39,10 +39,12 @@
 if (!isset($_POST["submit"])) {
   ?>
   <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>" id="contact-form">
-  <label for="from">From:</label>       <input type="text" name="from" id="from"><br>
+  <label for="from">From:</label>       <input type="text" name="from" id="from" value=''><br>
   <label for="email">E-mail:</label>    <input type="text" name="email" id="email"><br>
   <label for="subject">Subject:</label> <input type="text" name="subject" id="subject"><br>
   <label for="message">Message:</label> <textarea rows="10" cols="40" name="message" id="message"></textarea><br>
+  <label for="zip_code" class="hidden">Zip Code:</label>
+  <input type="text" id="zip_code" name="zip_code" class="hidden" />
   <br class="clear" />
 
   <input type="submit" name="submit" value="Submit" id="submit">
@@ -50,10 +52,12 @@ if (!isset($_POST["submit"])) {
   <?php
 } else {    // the user has submitted the form
   // Check if the "from" input field is filled out
-  if (isset($_POST["from"])) {
+  $message = $_POST["message"];
+  if ($_POST["email"]!='' and $_POST["from"]!='' and empty($_POST['name'])  ) {
+    $email = $_POST["email"];
     $from = $_POST["from"]; // sender
     $subject = $_POST["subject"];
-    $message = $_POST["message"];
+    
     // message lines should not exceed 70 characters (PHP rule), so wrap it
     $message = wordwrap($message, 70);
     // send mail
@@ -66,6 +70,11 @@ if (!isset($_POST["submit"])) {
       echo "Your message was:\n<br>";
       echo "$message\n<br>";
     }
+  } else {
+      echo "Message not sent! Please sent your message directly to <a href=\"mailto:hayer@upenn.edu?Subject=BP2\" target=\"_top\">hayer@upenn.edu</a>.\n<br>";
+
+      echo "Your message was:\n\n<br><br>";
+      echo "$message\n<br>";
   }
 }
 ?>

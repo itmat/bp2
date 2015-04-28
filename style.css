@@ -12,6 +12,11 @@ a{
 
 }
 
+.hidden{
+  display: none;
+  visibility: hidden;
+}
+
 #wrapper {
 width:960px;
 background-color:#f8f8f8;
